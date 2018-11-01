@@ -201,7 +201,7 @@ td,th{
     src:url(../fonts/glyphicons-halflings-regular.html);
     src:url(../fonts/glyphicons-halflings-regulard41d.html?#iefix) format('embedded-opentype'),url(../fonts/glyphicons-halflings-regular-2.html) format('woff2'),url(../fonts/glyphicons-halflings-regular-3.html) format('woff'),url(../fonts/glyphicons-halflings-regular-4.html) format('truetype'),url(../fonts/glyphicons-halflings-regular-5.html#glyphicons_halflingsregular) format('svg')
 }
-.glyphicon{
+/*.glyphicon{
     position:relative;
     top:1px;
     display:inline-block;
@@ -210,8 +210,8 @@ td,th{
     line-height:1;
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing:grayscale
-}
-.glyphicon-asterisk:before{
+}*/
+/*.glyphicon-asterisk:before{
     content:"\002a"
 }
 .glyphicon-plus:before{
@@ -984,7 +984,7 @@ td,th{
 }
 .glyphicon-menu-up:before{
     content:"\e260"
-}
+}*/
 *,:after,:before{
     -webkit-box-sizing:border-box;
     -moz-box-sizing:border-box;
