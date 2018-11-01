@@ -129,7 +129,7 @@
             if( getNav.hasClass("no-background")){
                 $(window).on("scroll", function(){
                     var scrollTop = $(window).scrollTop();
-                    if(scrollTop >34){
+                    if(scrollTop >680){
                         $(".navbar-fixed").removeClass("no-background");
                     }else {
                         $(".navbar-fixed").addClass("no-background");
@@ -137,19 +137,24 @@
                 });
             }
             
+            if(scrollTop > 200){
+                 $("#parallax").addClass("shrink"); 
+            }
+
+
             // ------------------------------------------------------------------------------ //
             // Navbar Fixed
             // ------------------------------------------------------------------------------ //
-            if( getNav.hasClass("navbar-transparent")){
-                $(window).on("scroll", function(){
-                    var scrollTop = $(window).scrollTop();
-                    if(scrollTop >34){
-                        $(".navbar-fixed").removeClass("navbar-transparent");
-                    }else {
-                        $(".navbar-fixed").addClass("navbar-transparent");
-                    }
-                });
-            }
+            // if( getNav.hasClass("navbar-transparent")){
+            //     $(window).on("scroll", function(){
+            //         var scrollTop = $(window).scrollTop();
+            //         if(scrollTop >100){
+            //             $(".navbar-fixed").removeClass("navbar-transparent");
+            //         }else {
+            //             $(".navbar-fixed").addClass("navbar-transparent");
+            //         }
+            //     });
+            // }
             
             // ------------------------------------------------------------------------------ //
             // Button Cart
