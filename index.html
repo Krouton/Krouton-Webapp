@@ -54,7 +54,7 @@
         }
         else
         {
-          $("#parallax").slideDown(2500);  
+          // $("#parallax").slideDown(2500);  
         }
     });
 
@@ -64,7 +64,19 @@
                 'scrollTop' : $(".culmn").position().top
                 });    
             });
-        });   
+
+            // $(".goup").click(function(){
+            //     $('html, body').animate({
+            //     'scrollTop' : $(".parallax").position().top
+            //     });    
+            // });
+        });
+
+        $(document).ready(function(){
+            $(".goup").click( function() {
+                $(window).scrollTop(0);
+            });   
+        });
 
     
 </script>
@@ -289,7 +301,7 @@ margin: auto;
                                         <div class="slide-text slide_style_left m-top-20">
                                             <h1 class="text-white" data-animation="animated fadeInUp">Your All-In-One 
                                                 Solution</h1>
-                                           
+                                           <button class="btn" class="goup">Go UP </button>
                                         </div>
                                     </div>
 
