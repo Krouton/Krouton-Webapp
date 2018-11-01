@@ -46,6 +46,7 @@
     //       $("#parallax").removeClass("shrink");        }
     // });
 
+    //Keep it
      $(document).on("scroll", function(){
         if($(document).scrollTop() >86){
           $("#parallax").slideUp(2500);
@@ -57,6 +58,13 @@
         }
     });
 
+        $(document).ready(function(){
+            $(".parallax").click(function(){
+                $('html, body').animate({
+                'scrollTop' : $(".culmn").position().top
+                });    
+            });
+        });   
 
     
 </script>
@@ -71,7 +79,8 @@
 }
 
  .shrink {
-   padding-bottom: 0px;
+   /*padding-bottom: 0px;*/
+   display: none;
 }
 
 /*Parallax*/
@@ -578,28 +587,12 @@ margin: auto;
                   </div>
                 </div><!-- End off container -->
             </section>
-            
-
-
-
-            
         </div>
 
         <!-- JS includes -->
-
         <script src="scripts/vendor/jquery-1.11.2.min.js"></script>
-        <script src="scripts/vendor/bootstrap.js"></script>
-
-        
-       
-        <script src="scripts/bootsnav.js"></script>
-        
-
-
-
-       
+        <script src="scripts/vendor/bootstrap.js"></script>       
+        <script src="scripts/bootsnav.js"></script>     
 
     </body>
-
-
 </html>
