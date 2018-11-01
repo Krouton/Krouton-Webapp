@@ -29,27 +29,24 @@
         
 
 <script>
-    
-    // $(document).on("scroll", function(){
-    //     if
-    //   ($(document).scrollTop() > 86){
-    //       $(".parallax").addClass("shrink");
-    //     }
-    //     else
-    //     {
-    //       $(".parallax").removeClass("shrink");
-    //     }
-    // });
+
+    $(document).ready(function(){
+        $(".parallax").click(function(){
+            $("#parallax").addClass("shrink");
+        });
+
+    });
 
     $(document).on("scroll", function(){
-        if($(document).scrollTop() > 300){
+        if($(document).scrollTop() > 85){
           $("#parallax").addClass("shrink");
         }
         else
         {
-          $("#parallax").removeClass("shrink");
-        }
+          $("#parallax").removeClass("shrink");        }
     });
+
+
     
 </script>
 
@@ -63,16 +60,14 @@
 }
 
  .shrink {
-    /*padding-top: 0;
-    padding-bottom: 0;
-    background-color: #ffffff;*/
     display: none;
 }
 
 /*Parallax*/
 .parallax {
     background-image: url("Assets/slide-bg-04.jpg");  
-    height: 800px; 
+    height: 900px;
+    /*width: auto; */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
