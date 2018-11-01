@@ -24,6 +24,35 @@
         <link rel="stylesheet" href="styles/responsive.css" />
 
         <script src="scripts/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+        
+
+<script>
+    
+    // $(document).on("scroll", function(){
+    //     if
+    //   ($(document).scrollTop() > 86){
+    //       $(".parallax").addClass("shrink");
+    //     }
+    //     else
+    //     {
+    //       $(".parallax").removeClass("shrink");
+    //     }
+    // });
+
+    $(document).on("scroll", function(){
+        if($(document).scrollTop() > 300){
+          $("#parallax").addClass("shrink");
+        }
+        else
+        {
+          $("#parallax").removeClass("shrink");
+        }
+    });
+    
+</script>
+
 <style type="text/css">
     .text1 h1{
     font-size:4.06vw;
@@ -32,6 +61,24 @@
     padding-top:65px;
     font-family: proxima_novasemibold;
 }
+
+ .shrink {
+    /*padding-top: 0;
+    padding-bottom: 0;
+    background-color: #ffffff;*/
+    display: none;
+}
+
+/*Parallax*/
+.parallax {
+    background-image: url("Assets/slide-bg-04.jpg");  
+    height: 800px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*End Parallax*/
 
 .img-responsive{
     width:100%;
@@ -170,7 +217,7 @@ div.desc {
 
         </nav> <!-- End off Nav -->
 
-
+        <div class="parallax" id="parallax"></div>
 
         <div class="culmn">
             <!--Home page style-->
