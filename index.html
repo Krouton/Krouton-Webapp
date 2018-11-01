@@ -30,39 +30,26 @@
 
 <script>
 
-    // $(document).ready(function(){
-    //     $(".parallax").click(function(){
-    //         $("#parallax").addClass("shrink");
-    //     });
 
-    // });
-
-    // $(document).on("scroll", function(){
-    //     if($(document).scrollTop() > 85){
-    //       $("#parallax").addClass("shrink");
-    //     }
-    //     else
-    //     {
-    //       $("#parallax").removeClass("shrink");        }
-    // });
-
-    //Keep it
+    //Parallax
      $(document).on("scroll", function(){
         if($(document).scrollTop() >86){
           $("#parallax").slideUp(2500);
-          // $("#parallax").addClass("shrink");
         }
+
+
         else
         {
-          $("#parallax").slideDown(2500);  
+          // $("#parallax").slideDown(2500);  
         }
     });
 
         $(document).ready(function(){
-            $(".parallax").click(function(){
-                $('html, body').animate({
-                'scrollTop' : $(".culmn").position().top
-                });    
+            $(".culmn").click(function(){
+                // $('html, body').animate({
+                // 'scrollTop' : $(".parallax").position().top
+                // });  
+                 $("#parallax").slideDown(2500);    
             });
         });
 
@@ -76,6 +63,11 @@
     line-height: 70px;
     padding-top:65px;
     font-family: proxima_novasemibold;
+}
+
+.culmn{
+-webkit-backface-visibility: hidden;
+-webkit-transform: translateZ(0) scale(1.0, 1.0);
 }
 
  .shrink {
@@ -288,7 +280,7 @@ margin: auto;
                                         <div class="slide-text slide_style_left m-top-20">
                                             <h1 class="text-white" data-animation="animated fadeInUp">Your All-In-One 
                                                 Solution</h1>
-                                           <button class="btn" class="goup">Go UP </button>
+                                           
                                         </div>
                                     </div>
 
