@@ -46,12 +46,15 @@
 
         $(document).ready(function(){
             $(".culmn").click(function(){
-                // $('html, body').animate({
-                // 'scrollTop' : $(".parallax").position().top
-                // });  
                  $("#parallax").slideDown(2500);    
             });
         });
+
+        //  $(document).ready(function(){
+        //     $("#parallax").click(function(){
+        //          $(".culmn").slideUp(2500);    
+        //     });
+        // });
 
           
 </script>
@@ -215,8 +218,6 @@ margin: auto;
     </head>
     <body data-spy="scroll" data-target=".navbar-collapse">
 
-
-
          <nav class="navbar home1_menu navbar-fixed navbar-default navbar-mobile bootsnav is-visible xsaa no-background white" data-nav-status="toggle">
 
             <div class="container-fluid"> 
@@ -272,17 +273,24 @@ margin: auto;
 
                             <!-- Slide Background -->
                             <img src="assets/slide-bg-01.jpg" alt="SeoPress Slider" />
-                            <div class="bs-slider-overlay"></div>
+                            <div class="bs-slider-overlay">
+                                 
+                            </div>
 
                             <div class="container">
                                 <div class="row">
                                     <div class="col-md-6 col-sm-12">
+                                        
                                         <div class="slide-text slide_style_left m-top-20">
                                             <h1 class="text-white" data-animation="animated fadeInUp">Your All-In-One 
                                                 Solution</h1>
                                            
                                         </div>
+                                        <h1 style="background-color: orange; color:darkred">Go UP </h1>
+                                         <span class="glyphicon glyphicon-arrow-up" style="color:red;"></span>
+                                        <i class="glyphicon glyphicon-glass"></i>
                                     </div>
+                                    
 
                                     <div class="col-md-6 col-sm-12 homev2-slid-img hidden-sm hidden-xs" data-animation="animated zoomIn">
                                         <img class="slide_style_right" src="assets/homev2-slid-01.png" alt="Bootstrap Touch Slider"/>
@@ -334,6 +342,7 @@ margin: auto;
                                                 <br /> Just Traffic.</h1>
                                            
                                         </div>
+
                                     </div>
 
 
